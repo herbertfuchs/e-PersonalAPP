@@ -10,6 +10,18 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: 'blue'
     },
+    iconWrapper:{
+        width: 56,
+        height: 56,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRightWidth: 1,
+        borderColor: theme.colors.textColor
+    },
+    icon: {
+        width: 40,
+        height: 40
+    },
     title: {
         flex: 1,
         fontSize: 26,
