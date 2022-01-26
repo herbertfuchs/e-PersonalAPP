@@ -8,30 +8,35 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
+        fontFamily: 'Roboto_400Regular',
+
     },
     image: {
-        width: 400,
-        height: 400,
+        flex: 1,
+        justifyContent: 'center',
     },
     content: {
-        marginTop: -40,
-        paddingHorizontal: 50
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '90%'
     },
-    title: {
-        textAlign: 'center',
-        fontSize: 45,
-        fontFamily: theme.fonts.title700,
-        lineHeight: 45,
-        marginBottom: 30,
-        marginTop: 50,
+    input: {
+        marginBottom: 10,
+        padding: 10,
+        color: '#000',
+        backgroundColor: theme.colors.textColor,
+        borderRadius: 9,
+        width: '90%',
     },
-        botao: {
+    botao: {
         marginBottom: 10,
         padding: 10,
         color: theme.colors.alwaysWhite,
         borderRadius: 9,
         backgroundColor: theme.colors.temaColor,
+        width: '50%',
         justifyContent: 'center',
         alignItems: 'center',
-    },
+    }
 });

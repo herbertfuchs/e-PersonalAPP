@@ -1,5 +1,6 @@
 import React from 'react';
 import { View,
+    Button,
     Text,
     TouchableOpacity } from 'react-native';
 
@@ -7,10 +8,8 @@ import { styles } from './styles';
 
 export function LoginButton(){
     return(
-        <TouchableOpacity 
-        style={styles.container}
-        activeOpacity={0.6}>
+        <Button>
             <Text style={styles.title}>Faça login com Google</Text>
-        </TouchableOpacity>
+        </Button>
     );
 }
