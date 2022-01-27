@@ -8,13 +8,13 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         borderRadius: 10,
-        backgroundColor: 'blue'
+        backgroundColor: theme.colors.temaColor
     },
     title: {
         flex: 1,
         fontSize: 26,
         textAlign: 'center',
-        color: theme.colors.textColor,
+        color: 'black',
         fontFamily: theme.fonts.title400
     }
 });

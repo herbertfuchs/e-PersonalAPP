@@ -3,20 +3,21 @@ import { View,
     Button,
     Text,
     Image,
-    TouchableOpacity } from 'react-native';
+    TouchableOpacity, 
+    TouchableOpacityProps} from 'react-native';
 
 import { styles } from './styles';
 import GoogleIcon from '../../assets/google-icon.png';
 
-export function LoginButton(){
+type Props = TouchableOpacityProps
+
+export function LoginButton({...rest}){
     return(
         <TouchableOpacity 
         style={styles.container}
-        activeOpacity={0.6}>
-            <View style={styles.iconWrapper}>
-                <Image source={GoogleIcon} style={styles.icon}/>
-            </View>
+        activeOpacity={0.6}
+        {...rest}>
             <Text style={styles.title}>Faça login com Google</Text>
-        </Button>
+        </TouchableOpacity>
     );
 }

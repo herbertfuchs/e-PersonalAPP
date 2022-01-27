@@ -25,13 +25,4 @@ export const styles = StyleSheet.create({
         marginBottom: 30,
         marginTop: 50,
     },
-        botao: {
-        marginBottom: 10,
-        padding: 10,
-        color: theme.colors.alwaysWhite,
-        borderRadius: 9,
-        backgroundColor: theme.colors.temaColor,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
 });
