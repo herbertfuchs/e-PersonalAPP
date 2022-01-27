@@ -4,11 +4,14 @@ import {
     Text,
     Image, 
     TouchableOpacity} from 'react-native';
+import { RouteStackParamList } from '../Route/RouteParamList';
 
 import { LoginButton } from '../../components/LoginButton';
+import { GuestButton } from '../../components/GuestButton';
+
 import Login from '../../assets/login.png';
 import { styles } from './styles';
-import { RouteStackParamList } from '../Route/RouteParamList';
+
 
 
 export function SignIn({ navigation, route }: RouteStackParamList<"Home">){
@@ -17,7 +20,7 @@ export function SignIn({ navigation, route }: RouteStackParamList<"Home">){
             <Image 
             source={Login}
             style={styles.image}
-             />
+            />
             <View style={styles.content}>
                 <Text style={styles.title}>
                     Pratique {'\n'}
@@ -25,6 +28,7 @@ export function SignIn({ navigation, route }: RouteStackParamList<"Home">){
                     da melhor maneira!
                 </Text>
                 <LoginButton onPress={() => {navigation.navigate('Login')}} />
+                <GuestButton onPress={() => {navigation.navigate('Exercicios')}}/>
             </View>
         </View>
     );
