@@ -10,7 +10,7 @@ type Props = TouchableOpacityProps
 
 export function GuestButton({...rest}){
     return(
-            <TouchableOpacity style={styles.container} {...rest}>
+            <TouchableOpacity style={styles.container} activeOpacity={0.4} {...rest}>
                     <Text style={styles.title}>Continuar como convidado</Text>
             </TouchableOpacity>
     );
