@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     View,
     KeyboardAvoidingView,
@@ -7,12 +7,36 @@ import {
     TouchableOpacity,
     Text, 
     } from 'react-native';
+import { RouteStackParamList } from '../Route/RouteParamList';
+import { Appwrite } from 'appwrite';
 
-import { LoginButton } from '../../components/LoginButton';
 import Logo from '../../assets/logo.png';
 import { styles } from './styles';
 
-export function Login(){
+export function Login({navigation, route}: RouteStackParamList<"Login">){
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const Login = () => {
+        const sdk = new Appwrite();
+
+        sdk
+            .setEndpoint('https://king-kong.faladev.org/v1') // Your API Endpoint
+            .setProject('61f998e0b23aeb09ff5c') // Your project ID
+        ;
+
+        let promise = sdk.account.createSession(`${email}`, `${password}`);
+
+        promise.then(function (response) {
+            console.log(response); // Success
+            navigation.navigate('Exercicios')
+            console.log('Conta encontrada e conectada com sucesso. Redirecionando...')
+        }, function (error) {
+            console.log(error); // Failure
+            console.log(`Não foi possível efetuar conexão, erro: ${error}`)
+        });
+    }
+
     return(
         <KeyboardAvoidingView style={styles.container}>
             <View style={styles.image}>
@@ -30,18 +54,19 @@ export function Login(){
                     style={styles.input}
                     placeholder="Email"
                     autoCorrect={false}
-                    onChangeText={()=> {}}
+                    onChangeText={setEmail}
                 />
 
                 <TextInput
                     style={styles.input}
                     placeholder="Senha"
                     autoCorrect={false}
-                    onChangeText={()=> {}}
+                    onChangeText={setPassword}
                 />
             
                 <TouchableOpacity
                     style={styles.botao}
+                    onPress={() => {Login()}}
                 >
                     <Text style={{
                         color: '#fff'

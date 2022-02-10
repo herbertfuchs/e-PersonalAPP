@@ -20,7 +20,7 @@ export function LoginButton({...rest}){
             <View style={styles.iconWrapper}>
                 <Image source={PesoIcon} style={styles.icon} />
             </View>
-            <Text style={styles.title}>Faça login com Google</Text>
+            <Text style={styles.title}>Efetue o seu Login</Text>
         </TouchableOpacity>
     );
 }

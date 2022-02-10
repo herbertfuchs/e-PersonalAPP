@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         flex: 1,
-        fontSize: 26,
+        fontSize: 28,
         textAlign: 'center',
         marginLeft: -15,
         color: 'black',

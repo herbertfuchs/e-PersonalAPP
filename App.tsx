@@ -4,7 +4,6 @@ import AppLoading from 'expo-app-loading';
 import { useFonts, Dongle_700Bold, Dongle_400Regular } from '@expo-google-fonts/dongle';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
 import { Routes } from './src/Screens/Route';
 
 const Stack = createNativeStackNavigator();
@@ -21,14 +20,14 @@ export default function App() {
     )
   } else { // StatusBar transparent com icons pretos
     return (
-      <>
+    <>
       <StatusBar 
       barStyle="dark-content"
       backgroundColor="transparent"
       translucent    
-    />
+      />
       <Routes/>
-      </>
+    </>
       );
     }
   }
