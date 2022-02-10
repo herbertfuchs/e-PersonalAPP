@@ -28,15 +28,5 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.colors.textColor,
         borderRadius: 9,
         width: '90%',
-    },
-    botao: {
-        marginBottom: 10,
-        padding: 10,
-        color: theme.colors.alwaysWhite,
-        borderRadius: 9,
-        backgroundColor: theme.colors.temaColor,
-        width: '50%',
-        justifyContent: 'center',
-        alignItems: 'center',
     }
 });
