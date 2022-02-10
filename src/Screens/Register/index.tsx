@@ -12,6 +12,8 @@ import { Appwrite } from 'appwrite';
 
 import Logo from '../../assets/logo.png';
 import { styles } from './styles';
+import { AccessButton } from './components/AccessButton';
+import { NewAccountButton } from './components/NewAccountButton';
 
 export function Login({navigation, route}: RouteStackParamList<"Login">){
     const [email, setEmail] = useState('');
@@ -64,19 +66,9 @@ export function Login({navigation, route}: RouteStackParamList<"Login">){
                     onChangeText={setPassword}
                 />
             
-                <TouchableOpacity
-                    style={styles.botao}
-                    onPress={() => {Login()}}
-                >
-                    <Text style={{
-                        color: '#fff'
-                    }}>Acessar</Text>
-                </TouchableOpacity>
+                <AccessButton onPress={() => {Login()}}/>
 
-                <TouchableOpacity
-                >
-                    <Text>Criar Conta</Text>
-                </TouchableOpacity>
+                <NewAccountButton onPress={() => {navigation.navigate('Register')}}/>
             </View>
 
         </KeyboardAvoidingView>
