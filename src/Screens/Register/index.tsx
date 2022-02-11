@@ -4,8 +4,6 @@ import {
     KeyboardAvoidingView,
     TextInput,
     Image,
-    TouchableOpacity,
-    Text, 
     } from 'react-native';
 import { RouteStackParamList } from '../Route/RouteParamList';
 import { Appwrite } from 'appwrite';

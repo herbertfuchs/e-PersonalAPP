@@ -2,7 +2,6 @@ import React from 'react';
 import {
     View,
     SafeAreaView,
-    StyleSheet,
     Image,
     } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -27,7 +26,6 @@ export function Register(){
                 <View style={styles.box}></View>
                 <View style={styles.box}></View>
                 <View style={styles.box}></View>
-
 
             </ScrollView>
         </SafeAreaView>
