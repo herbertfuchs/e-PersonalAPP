@@ -9,9 +9,11 @@ import { View,
 import { styles } from './styles';
 import PesoIcon from '../../assets/peso.png';
 
-type Props = TouchableOpacityProps
+type Props = TouchableOpacityProps & {
+    title: string;
+}
 
-export function LoginButton({...rest}){
+export function LoginButton({ title, ...rest }){
     return(
         <TouchableOpacity 
         style={styles.container}
@@ -20,7 +22,7 @@ export function LoginButton({...rest}){
             <View style={styles.iconWrapper}>
                 <Image source={PesoIcon} style={styles.icon} />
             </View>
-            <Text style={styles.title}>Efetue o seu Login</Text>
+            <Text style={styles.title}>{title}</Text>
         </TouchableOpacity>
     );
 }

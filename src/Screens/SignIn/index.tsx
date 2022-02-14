@@ -34,8 +34,8 @@ export function SignIn({ navigation, route }: RouteStackParamList<"Home">){
             console.log(`Sessão detectada, redirecionando...`)
             navigation.navigate('Exercicios')
         }, function (error) {
-            console.log(error); // Failure
             console.log(`Nenhuma sessão encontrada, efetue o Login.`)
+            console.log(error); // Failure
         });
     }
 
@@ -68,7 +68,7 @@ export function SignIn({ navigation, route }: RouteStackParamList<"Home">){
                 seus exercícios {'\n'}
                 da melhor maneira!
             </Text>
-            <LoginButton onPress={() => {navigation.navigate('Login')}}/>
+            <LoginButton title={'Efetue seu Login'} onPress={() => {navigation.navigate('Login')}}/>
             <GuestButton onPress={() => {continueAsGuest()}}/>
         </View>
     </View>
