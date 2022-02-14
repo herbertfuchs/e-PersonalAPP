@@ -3,13 +3,13 @@ import { StyleSheet } from 'react-native';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
+    
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
         fontFamily: 'Roboto_400Regular',
-
     },
     image: {
         flex: 1,

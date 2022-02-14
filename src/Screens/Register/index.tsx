@@ -3,8 +3,7 @@ import {
     View,
     KeyboardAvoidingView,
     TextInput,
-    Image,
-    } from 'react-native';
+    Image } from 'react-native';
 import { RouteStackParamList } from '../Route/RouteParamList';
 import { Appwrite } from 'appwrite';
 
