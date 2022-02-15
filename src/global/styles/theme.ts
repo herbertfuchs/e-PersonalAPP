@@ -1,10 +1,9 @@
 export const theme = {
     colors: {
+        alwaysWhite: '#fff',
+        secondaryColor: '#128229',
         textColor: '#DDE3F0',
         temaColor: '#0fe43b',
-        secondaryColor: '#128229',
-        alwaysWhite: '#fff',
-
     },
     fonts: {
         title700: 'Dongle_700Bold',
