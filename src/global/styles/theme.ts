@@ -2,6 +2,7 @@ export const theme = {
     colors: {
         textColor: '#DDE3F0',
         temaColor: '#0fe43b',
+        secondaryColor: '#128229',
         alwaysWhite: '#fff',
 
     },
