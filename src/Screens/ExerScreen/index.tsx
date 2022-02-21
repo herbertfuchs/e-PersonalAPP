@@ -3,14 +3,19 @@ import {
     View,
     SafeAreaView,
     Image,
-    Text } from 'react-native';
+    Text,
+    TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Appwrite } from 'appwrite';
+import { RouteStackParamList } from '../Route/RouteParamList';
 
 import Logo from '../../assets/peso.png';
+import ImgPrincipal from '../../assets/funcionalTempo.png';
+import Musculo from '../../assets/musculacaoTempo.png';
+
 import { styles } from './styles';
 
-export function PageExerc(){
+export function PageExerc({navigation, route}: RouteStackParamList<"Exercicios">){
     const [userName, setUserName] = useState<any>();
 
 // ============================== Definindo o SDK e rotas da API ==========================================
@@ -57,11 +62,12 @@ export function PageExerc(){
             
             <ScrollView>
 
-                <View style={styles.box}></View>
-                <View style={styles.box}></View>
-                <View style={styles.box}></View>
-                <View style={styles.box}></View>
-                <View style={styles.box}></View>
+            <TouchableOpacity onPress={() => {navigation.navigate('VideoPlayer')}}><View style={styles.box}><Image source={ImgPrincipal} style={styles.boxImage}/></View></TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('VideoPlayer')}}><View style={styles.box}><Image source={Musculo} style={styles.boxImage}/></View></TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('VideoPlayer')}}><View style={styles.box}><Image source={ImgPrincipal} style={styles.boxImage}/></View></TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('VideoPlayer')}}><View style={styles.box}><Image source={ImgPrincipal} style={styles.boxImage}/></View></TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('VideoPlayer')}}><View style={styles.box}><Image source={ImgPrincipal} style={styles.boxImage}/></View></TouchableOpacity>
+
 
             </ScrollView>
         </SafeAreaView>

@@ -12,6 +12,8 @@ import { SignIn } from '../SignIn';
 import { Login } from '../Register';
 import { Register } from '../Register/Cadastro';
 import { PageExerc } from '../ExerScreen';
+import { VideoPlayer } from '../ExerScreen/src';
+
 
 
 interface RoutesProps {
@@ -28,6 +30,8 @@ export const Routes: React.FC<RoutesProps> = ({}) => {
           <Stack.Screen name="Login" component={Login}/>
           <Stack.Screen name="Register" component={Register} options={{ headerShown: false }}/>
           <Stack.Screen name="Exercicios" component={PageExerc} options={{ headerShown: false }}/>
+          <Stack.Screen name="VideoPlayer" component={VideoPlayer} options={{ headerShown: false }}/>
+
         </Stack.Navigator>
       </NavigationContainer>
     )

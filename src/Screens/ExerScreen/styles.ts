@@ -8,12 +8,20 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between'
     },
-
+    boxImage: {
+        height: '100%',
+        width: '100%',
+        borderRadius: 5,
+    },
     box: {
         height: 300,
         backgroundColor: theme.colors.textColor,
         margin: 7,
         borderRadius: 5,
+        shadowColor: '#171717',
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 1,
+        shadowRadius: 3,
     },
     greetings: {
         fontSize: 26,

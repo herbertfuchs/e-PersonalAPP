@@ -2,7 +2,8 @@ export type RouteParamList = {
     Home: undefined;
     Register: undefined;
     Login: undefined;
-    PageExerc: undefined;
+    Exercicios: undefined;
+    VideoPlayer: undefined;
     
 };
 
