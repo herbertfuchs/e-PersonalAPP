@@ -89,26 +89,8 @@ export function PageExerc({
             navigation.navigate("VideoPlayer");
           }}
         >
-          <View style={styles.box}>
-            <Image source={ImgPrincipal} style={styles.boxImage} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate("VideoPlayer");
-          }}
-        >
-          <View style={styles.box}>
-            <Image source={ImgPrincipal} style={styles.boxImage} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate("VideoPlayer");
-          }}
-        >
-          <View style={styles.box}>
-            <Image source={ImgPrincipal} style={styles.boxImage} />
+          <View style={styles.boxSoon}>
+            <Text style={styles.soon}>Em breve mais exercícios...</Text>
           </View>
         </TouchableOpacity>
       </ScrollView>

@@ -33,4 +33,13 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title700,
     color: theme.colors.secondaryColor,
   },
+  boxSoon: {
+    height: "100%",
+    backgroundColor: theme.colors.textColor,
+  },
+  soon: {
+    fontFamily: theme.fonts.title400,
+    textAlign: "center",
+    fontSize: 28,
+  },
 });
