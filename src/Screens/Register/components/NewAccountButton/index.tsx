@@ -1,16 +1,12 @@
-import React from 'react';
-import { Text, 
-    TouchableOpacity,
-    TouchableOpacityProps } from 'react-native';
+import React from "react";
+import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
 
-type Props = TouchableOpacityProps
+type Props = TouchableOpacityProps;
 
-export function NewAccountButton({...rest}){
-    return(
-        <TouchableOpacity {...rest}>
-            <Text>
-                Criar Conta
-            </Text>
-        </TouchableOpacity>
-    );
+export function NewAccountButton({ ...rest }: Props) {
+  return (
+    <TouchableOpacity {...rest}>
+      <Text>Criar Conta</Text>
+    </TouchableOpacity>
+  );
 }

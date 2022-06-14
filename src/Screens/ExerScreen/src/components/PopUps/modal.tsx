@@ -1,13 +1,13 @@
 import React from "react";
-import { StyleSheet, View, Text, Button } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import RNModal from "react-native-modal";
-import { theme } from '../../../../../global/styles/theme';
 
 type ModalProps = {
   isVisible: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   [x: string]: any;
 };
+
 export const Modal = ({
   isVisible = false,
   children,
@@ -20,7 +20,8 @@ export const Modal = ({
       animationOutTiming={1000}
       backdropTransitionInTiming={800}
       backdropTransitionOutTiming={800}
-      {...props}>
+      {...props}
+    >
       {children}
     </RNModal>
   );
@@ -51,12 +52,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#000",
     fontSize: 20,
-
   },
   header: {
     alignItems: "center",
     justifyContent: "center",
-    
   },
   text: {
     paddingTop: 10,
