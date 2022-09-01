@@ -37,7 +37,6 @@ export const Routes: React.FC<RoutesProps> = () => {
         <Stack.Screen
           name="VideoPlayer"
           component={VideoPlayer}
-          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
