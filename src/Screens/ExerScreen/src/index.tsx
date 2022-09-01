@@ -92,7 +92,6 @@ export function VideoPlayer() {
         <OpenExerc title="Burpee" onPress={handleModalThree} />
         <OpenExerc title="Afundo" onPress={handleModalFour} />
         <OpenExerc title="Prancha" onPress={handleModalFive} />
-        <OpenExerc title="Corda" onPress={handleModal} />
       </ScrollView>
 
       <Modal isVisible={isModalVisible}>
